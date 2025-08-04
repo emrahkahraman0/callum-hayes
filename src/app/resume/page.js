@@ -1,15 +1,11 @@
 import React from "react";
-import Aboutİnfo from "../../templates/about/Aboutİnfo";
-import Aboutİnterest from "../../templates/about/Aboutİnterest";
 
-function About() {
+function Resume() {
   return (
     <>
-      <div>About</div>
-        <Aboutİnfo />
-        <Aboutİnterest />
+      <div>Resume</div>
     </>
   );
 }
 
-export default About;
+export default Resume;

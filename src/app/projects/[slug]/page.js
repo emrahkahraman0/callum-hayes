@@ -1,11 +1,11 @@
 import React from "react";
 
-function BlogDetails() {
+function ProjectsDetails() {
   return (
     <>
-      <div>BlogDetails</div>
+      <div>ProjectsDetails</div>
     </>
   );
 }
 
-export default BlogDetails;
+export default ProjectsDetails;
