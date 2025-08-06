@@ -1,9 +1,10 @@
-import React from "react";
+import İnfo from "@/templates/İnfo";
 
 function Projects() {
   return (
     <>
       <div>Projects</div>
+      <İnfo />
     </>
   );
 }

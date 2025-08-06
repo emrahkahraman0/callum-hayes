@@ -43,6 +43,7 @@ function Header() {
             <div className="header_logo">
               <Link href="/">
                 <Image
+                  className="img_fluid"
                   src="/header-logo.png"
                   width={105}
                   height={16}
@@ -88,24 +89,6 @@ function Header() {
                   onClick={closeMenu}
                 >
                   Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className={currentRoute === "/blog" ? "active" : ""}
-                  href="/blog"
-                  onClick={closeMenu}
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className={currentRoute === "/contact" ? "active" : ""}
-                  href="/contact"
-                  onClick={closeMenu}
-                >
-                  Contact
                 </Link>
               </li>
               <button>
