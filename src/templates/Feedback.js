@@ -10,10 +10,11 @@ import "slick-carousel/slick/slick-theme.css";
 function Feedback() {
   var settings = {
     autoplay: true,
+    arrows: false,
     dots: false,
     infinite: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 3000,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     slidesToShow: 2,
     slidesToScroll: 2,
@@ -24,8 +25,8 @@ function Feedback() {
       {
         breakpoint: 1000,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
       {
@@ -34,6 +35,15 @@ function Feedback() {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerPadding: "30px",
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "0",
+          centerMode: false,
         },
       },
     ],

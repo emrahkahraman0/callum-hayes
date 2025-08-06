@@ -332,6 +332,31 @@ body {
   }
 }
 
+//Home_Projects#
+#home_projects {
+  width: 100%;
+  padding: 100px 0;
+  background-color: $three_color;
+
+  //home_projects
+  .home_projects {
+    //&_heading
+    &_heading {
+    }
+
+    //&_items
+    &_items {
+      padding-top: 50px;
+      //&_box
+      &_box {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 //Graduation#
 #graduation {
   width: 100%;
@@ -455,6 +480,158 @@ body {
 
 //Feedback#
 #feedback {
+  width: 100%;
+  background-color: $three_color;
+  padding: 100px 0;
+
+  //feedback
+  .feedback {
+    //&_heading
+    &_heading {
+      max-width: 515px;
+      h6 {
+        font-size: 50px;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: $seven_color;
+        line-height: normal;
+      }
+      p {
+        padding-top: 20px;
+        font-size: $xlarge_size;
+        line-height: 160%;
+        color: $eight_color;
+      }
+
+      //Large
+      @include large {
+        h6 {
+          font-size: 40px;
+        }
+        p {
+          font-size: $large_size;
+          line-height: normal;
+        }
+      }
+      //Notebook
+      @include notebook {
+        max-width: 100%;
+        text-align: center;
+        h6 {
+          font-size: 30px;
+        }
+        p {
+          padding-top: 15px;
+          font-size: $regular_size;
+        }
+      }
+      //Tablet
+      @include tablet {
+        h6 {
+          font-size: 25px;
+        }
+      }
+      //X_Tablet
+      @include x_tablet {
+        h6 {
+          font-size: 20px;
+        }
+        p {
+          font-size: $small_size;
+        }
+      }
+    }
+
+    //&_gallery
+    &_gallery {
+      padding-top: 50px;
+      .slick-slide {
+        padding: 0 10px;
+      }
+      //&_item
+      &_item {
+        padding: 40px;
+        background-color: $base_color;
+        border-radius: 13px;
+        h5 {
+          padding-top: 20px;
+          color: $primary_color;
+          font-size: 30px;
+          font-weight: 500;
+          text-transform: capitalize;
+          line-height: normal;
+        }
+        h6 {
+          padding-top: 5px;
+          font-size: $regular_size;
+          font-weight: 500;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+        p {
+          padding-top: 15px;
+          color: $two_color;
+          font-size: $xlarge_size;
+          font-weight: 400;
+          line-height: 160%;
+        }
+      }
+      //Large
+      @include large {
+        //&_item
+        &_item {
+          h5 {
+            font-size: 25px;
+          }
+          p {
+            font-size: $large_size;
+          }
+        }
+      }
+      //Notebook
+      @include notebook {
+        text-align: center;
+        //&_item
+        &_item {
+          padding: 30px;
+          img {
+            margin: 0 auto;
+          }
+          h5 {
+            font-size: 20px;
+          }
+          p {
+            font-size: $regular_size;
+            line-height: 150%;
+          }
+        }
+      }
+      //X_Tablet
+      @include x_tablet {
+        //&_item
+        &_item {
+          h5 {
+            font-size: $xlarge_size;
+          }
+        }
+      }
+      //Mobil
+      @include mobil {
+        //&_item
+        &_item {
+          h5 {
+            font-size: $large_size;
+          }
+          h6 {
+            font-size: $small_size;
+          }
+          p {
+            font-size: $small_size;
+          }
+        }
+      }
+    }
+  }
 }
 
 //İnfo#
