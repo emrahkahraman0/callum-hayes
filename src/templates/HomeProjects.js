@@ -16,7 +16,7 @@ function HomeProjects({ projects }) {
               </p>
             </div>
             {/*home_projects_heading*/}
-            <div className="home_projects_items row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
+            <div className="home_projects_items row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-sm-2">
               {projects.map((project) => (
                 <div key={project.id} className="home_projects_items_box">
                   <Image
@@ -27,9 +27,11 @@ function HomeProjects({ projects }) {
                     priority
                     alt={project.title}
                   />
-                  <Link href={`/projects/${project.slug}`}>
-                    <h6>{project.title}</h6>
-                  </Link>
+                  <h6>
+                    <Link href={`/projects/${project.slug}`}>
+                      {project.title}
+                    </Link>
+                  </h6>
                   <p>{project.description}</p>
                 </div>
               ))}

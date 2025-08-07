@@ -1,15 +1,17 @@
 const projects = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "Kişisel portfolyo sitesi.",
+    title: "Redesign project: fitness tracker App Revamp",
+    description:
+      "Elevating the user experience of a renowned fitness tracker app through a strategic.",
     image: "/300x300.png",
     slug: "portfolio-website",
   },
   {
     id: 2,
-    title: "Blog Platform",
-    description: "Basit bir blog platformu.",
+    title: "Redesign project: fitness tracker App Revamp",
+    description:
+      "Elevating the user experience of a renowned fitness tracker app through a strategic.",
     image: "/300x300.png",
     slug: "portfolio-website",
   },
