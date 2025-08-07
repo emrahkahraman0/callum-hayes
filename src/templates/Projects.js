@@ -4,7 +4,8 @@ const projects = [
     title: "Redesign project: fitness tracker App Revamp",
     description:
       "Elevating the user experience of a renowned fitness tracker app through a strategic.",
-    image: "/300x300.png",
+    image_small: "/project-small.png",
+    image_large: "/project-large.png",
     slug: "portfolio-website",
   },
   {
@@ -12,14 +13,17 @@ const projects = [
     title: "Redesign project: fitness tracker App Revamp",
     description:
       "Elevating the user experience of a renowned fitness tracker app through a strategic.",
-    image: "/300x300.png",
+    image_small: "/project-small.png",
+    image_large: "/project-large.png",
     slug: "portfolio-website",
   },
   {
     id: 3,
-    title: "Callum Hayes",
-    description: "Basit bir portfolio sitesidir.",
-    image: "/300x300.png",
+    title: "Redesign project: fitness tracker App Revamp",
+    description:
+      "Elevating the user experience of a renowned fitness tracker app through a strategic.",
+    image_small: "/project-small.png",
+    image_large: "/project-large.png",
     slug: "portfolio-website",
   },
   {
@@ -27,7 +31,8 @@ const projects = [
     title: "Redesign project: fitness tracker App Revamp",
     description:
       "Elevating the user experience of a renowned fitness tracker app through a strategic.",
-    image: "/300x300.png",
+    image_small: "/project-small.png",
+    image_large: "/project-large.png",
     slug: "portfolio-website",
   },
   {
@@ -35,7 +40,8 @@ const projects = [
     title: "Redesign project",
     description:
       "Elevating the user experience of a renowned fitness tracker app through a strategic.",
-    image: "/300x300.png",
+    image_small: "/project-small.png",
+    image_large: "/project-large.png",
     slug: "redesign-project",
   },
 ];

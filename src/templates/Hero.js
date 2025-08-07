@@ -10,8 +10,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Hero() {
   var settings = {
-    autoplay: true,
     dots: false,
+    arrows: false,
+    autoplay: true,
     infinite: true,
     speed: 3000,
     autoplaySpeed: 3000,
@@ -85,6 +86,28 @@ function Hero() {
             {/*hero_content*/}
             <div className="hero_gallery">
               <Slider {...settings}>
+                <div className="hero_gallery_item">
+                  <Image
+                    className="img_fluid"
+                    src="/gallery-1.png"
+                    width={400}
+                    height={300}
+                    priority
+                    alt="Gallery İmage"
+                  />
+                </div>
+                {/*hero_gallery_item*/}
+                <div className="hero_gallery_item">
+                  <Image
+                    className="img_fluid"
+                    src="/gallery-2.png"
+                    width={400}
+                    height={300}
+                    priority
+                    alt="Gallery İmage"
+                  />
+                </div>
+                {/*hero_gallery_item*/}
                 <div className="hero_gallery_item">
                   <Image
                     className="img_fluid"

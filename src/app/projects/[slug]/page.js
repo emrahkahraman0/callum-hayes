@@ -16,9 +16,9 @@ function ProjectsDetails({ params }) {
       <p>{project.description}</p>
       <Image
         className="img_fluid"
-        src={project.image} // örn: "/projects/project1.jpg"
-        width={300}
-        height={300}
+        src={project.image_large} // örn: "/projects/project1.jpg"
+        width={800}
+        height={563}
         priority
         alt={project.title}
       />

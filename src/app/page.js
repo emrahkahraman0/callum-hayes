@@ -6,7 +6,7 @@ import projects from "@/templates/Projects";
 import HomeProjects from "@/templates/HomeProjects";
 
 function Home() {
-  const homeProjects = projects.slice(0, 2); // Sadece ilk 2 projeyi göster
+  const homeProjects = projects.slice(0, 3); // Sadece ilk 2 projeyi göster
   return (
     <>
       <Hero />

@@ -60,11 +60,11 @@ body {
           &::before {
             position: absolute;
             width: 0;
-            margin: -3px 0;
+            margin: 7px 0;
             transition: 0.4ms all ease-in-out;
             content: "";
             background-color: $primary_color;
-            height: 3px;
+            height: 2px;
             border-radius: 2px;
             left: 0;
             bottom: 0;
@@ -80,11 +80,11 @@ body {
           &::before {
             position: absolute;
             width: 0;
-            margin: -3px 0;
+            margin: 7px 0;
             transition: 0.4ms all ease-in-out;
             content: "";
             background-color: $two_color;
-            height: 3px;
+            height: 2px;
             border-radius: 2px;
             left: 0;
             bottom: 0;
@@ -409,6 +409,10 @@ body {
       padding-top: 50px;
       //&_box
       &_box {
+        margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
         img {
           width: 100%;
         }
@@ -470,10 +474,6 @@ body {
         //X_Tablet
         @include x_tablet {
           text-align: center;
-          margin-bottom: 30px;
-          &:last-child {
-            margin-bottom: 0;
-          }
           h6 {
             a {
               font-size: $xlarge_size;

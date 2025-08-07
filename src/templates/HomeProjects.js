@@ -21,9 +21,9 @@ function HomeProjects({ projects }) {
                 <div key={project.id} className="home_projects_items_box">
                   <Image
                     className="img_fluid"
-                    src={project.image}
-                    width={300}
-                    height={300}
+                    src={project.image_small}
+                    width={490}
+                    height={383}
                     priority
                     alt={project.title}
                   />

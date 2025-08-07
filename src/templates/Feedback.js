@@ -9,9 +9,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Feedback() {
   var settings = {
-    autoplay: true,
     arrows: false,
     dots: false,
+    autoplay: true,
     infinite: true,
     speed: 3000,
     autoplaySpeed: 3000,
@@ -62,6 +62,46 @@ function Feedback() {
             </div>
             <div className="feedback_gallery">
               <Slider {...settings}>
+                <div className="feedback_gallery_item">
+                  <Image
+                    className="img_fluid"
+                    src="/feedback-image.png"
+                    width={84}
+                    height={84}
+                    priority
+                    alt="Feedback İmage"
+                  />
+                  <h5>Dr. James Anderson</h5>
+                  <h6>Director of the College of Art and Design</h6>
+                  <p>
+                    "As the director of the college, I have witnessed Callum's
+                    remarkable growth as a designer. He has a keen eye for
+                    detail and a commendable dedication to his craft, which has
+                    set a high standard for his peers. Callum's work is a
+                    testament to his potential in the design industry."
+                  </p>
+                </div>
+                {/*feedback_gallery_item*/}
+                <div className="feedback_gallery_item">
+                  <Image
+                    className="img_fluid"
+                    src="/feedback-image.png"
+                    width={84}
+                    height={84}
+                    priority
+                    alt="Feedback İmage"
+                  />
+                  <h5>Dr. James Anderson</h5>
+                  <h6>Director of the College of Art and Design</h6>
+                  <p>
+                    "As the director of the college, I have witnessed Callum's
+                    remarkable growth as a designer. He has a keen eye for
+                    detail and a commendable dedication to his craft, which has
+                    set a high standard for his peers. Callum's work is a
+                    testament to his potential in the design industry."
+                  </p>
+                </div>
+                {/*feedback_gallery_item*/}
                 <div className="feedback_gallery_item">
                   <Image
                     className="img_fluid"

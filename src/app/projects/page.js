@@ -5,7 +5,6 @@ import HomeProjects from "@/templates/HomeProjects";
 function Projects() {
   return (
     <>
-      <div>Projects</div>
       <HomeProjects projects={projects} />
       <İnfo />
     </>
