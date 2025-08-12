@@ -162,10 +162,6 @@ body {
           }
         }
       }
-      //dropdown
-      .dropdown.open {
-        opacity: 1;
-      }
       &_menu.open {
         opacity: 1;
         transform: scale(1);
@@ -967,4 +963,40 @@ body {
       }
     }
   }
+}
+
+///// ABOUT \\\\\
+
+//About_Who#
+#about_who {
+  width: 100%;
+  padding: 100px 0;
+
+  h6 {
+  }
+
+  //about_who
+  .about_who {
+    padding-top: 90px;
+
+    //&_image
+    &_image {
+      img {
+        width: 100%;
+      }
+    }
+    //&_text
+    &_text {
+      h5 {
+      }
+      p {
+      }
+    }
+  }
+}
+
+//About_Looking#
+#about_looking {
+  width: 100%;
+  background-color: $three_color;
 }

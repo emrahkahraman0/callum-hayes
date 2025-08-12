@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // Proje kök dizini
     "paths": {
       "@/*": ["./src/*"]
     }

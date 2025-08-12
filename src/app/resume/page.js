@@ -1,9 +1,13 @@
 import İnfo from "@/templates/İnfo";
+import ResumeAbout from "@/templates/ResumeAbout";
+import skills from "@/templates/Skills";
+import ResumeSkills from "@/templates/ResumeSkills";
 
 function Resume() {
   return (
     <>
-      <div>Resume</div>
+      <ResumeAbout />
+      <ResumeSkills skills={skills} />
       <İnfo />
     </>
   );
