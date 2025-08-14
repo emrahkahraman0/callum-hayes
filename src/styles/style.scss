@@ -197,6 +197,13 @@ body {
   .header {
     height: 70px;
 
+    //&_menu
+    &_menu {
+      button {
+        border: 1px solid $primary_color;
+      }
+    }
+
     //&_hamburger
     &_hamburger {
       top: 20px;
@@ -333,6 +340,7 @@ body {
   width: 100%;
   padding: 100px 0;
   background-color: $three_color;
+  border-radius: 60px 60px 0 0;
 
   //home_projects
   .home_projects {
@@ -971,8 +979,15 @@ body {
 #about_who {
   width: 100%;
   padding: 100px 0;
+  background-color: $base_color;
+  border-radius: 0 0 60px 60px;
 
   h6 {
+    font-size: 55px;
+    text-transform: capitalize;
+    line-height: 110%;
+    font-weight: 400;
+    color: $primary_color;
   }
 
   //about_who
@@ -988,8 +1003,113 @@ body {
     //&_text
     &_text {
       h5 {
+        font-size: 24px;
+        font-weight: 500;
+        color: $primary_color;
+        line-height: 140%;
       }
       p {
+        padding-top: 28px;
+        color: $two_color;
+        font-size: $xlarge_size;
+        font-weight: 400;
+        line-height: 160%;
+      }
+    }
+  }
+
+  //Large
+  @include large {
+    h6 {
+      font-size: 45px;
+    }
+    //about_who
+    .about_who {
+      //&_text
+      &_text {
+        h5 {
+          font-size: 22px;
+        }
+        p {
+          font-size: $large_size;
+        }
+      }
+    }
+  }
+  //Notebook
+  @include notebook {
+    text-align: center;
+    h6 {
+      font-size: 35px;
+    }
+    //about_who
+    .about_who {
+      padding-top: 80px;
+      //&_text
+      &_text {
+        padding-top: 40px;
+        h5 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  //Tablet
+  @include tablet {
+    h6 {
+      font-size: 30px;
+    }
+    //about_who
+    .about_who {
+      padding-top: 70px;
+      //&_text
+      &_text {
+        h5 {
+          font-size: $xlarge_size;
+        }
+        p {
+          font-size: $regular_size;
+        }
+      }
+    }
+  }
+  //X_Tablet
+  @include x_tablet {
+    h6 {
+      font-size: 25px;
+    }
+    //about_who
+    .about_who {
+      //&_text
+      &_text {
+        padding-top: 35px;
+        h5 {
+          font-size: $large_size;
+        }
+        p {
+          padding-top: 25px;
+        }
+      }
+    }
+  }
+  //Mobil
+  @include mobil {
+    h6 {
+      font-size: 20px;
+    }
+    //about_who
+    .about_who {
+      padding-top: 60px;
+      //&_text
+      &_text {
+        h5 {
+          font-size: $regular_size;
+        }
+        p {
+          padding-top: 25px;
+          font-size: $small_size;
+          line-height: normal;
+        }
       }
     }
   }
@@ -999,4 +1119,409 @@ body {
 #about_looking {
   width: 100%;
   background-color: $three_color;
+  padding: 100px 0 150px 0;
+  border-radius: 60px 60px 0 0;
+
+  //about_looking
+  .about_looking {
+    //&_interests
+    &_interests {
+      padding-bottom: 50px;
+      h6 {
+        font-size: 50px;
+        font-weight: 500;
+        color: $primary_color;
+        line-height: normal;
+      }
+      p {
+        padding-top: 20px;
+        font-size: $xlarge_size;
+        font-weight: 400;
+        color: $two_color;
+        line-height: 160%;
+      }
+      img {
+        margin-top: 50px;
+      }
+    }
+
+    //&_ahead
+    &_ahead {
+      padding-top: 50px;
+      h6 {
+        font-size: 50px;
+        font-weight: 500;
+        color: $primary_color;
+        line-height: normal;
+      }
+      p {
+        padding-top: 20px;
+        font-size: $xlarge_size;
+        font-weight: 400;
+        color: $two_color;
+        line-height: 160%;
+      }
+    }
+
+    //&X_Large
+    @include x_large {
+      //&_interests
+      &_interests {
+        h6 {
+          font-size: 40px;
+        }
+        p {
+          font-size: $large_size;
+        }
+      }
+      //&_ahead
+      &_ahead {
+        h6 {
+          font-size: 40px;
+        }
+        p {
+          font-size: $large_size;
+        }
+      }
+    }
+    //&_Large
+    @include large {
+      //&_interests
+      &_interests {
+        h6 {
+          font-size: 35px;
+        }
+        p {
+          font-size: $large_size;
+        }
+      }
+      //&_ahead
+      &_ahead {
+        h6 {
+          font-size: 35px;
+        }
+      }
+    }
+    //&_Notebook
+    @include notebook {
+      text-align: center;
+      //&_interests
+      &_interests {
+        h6 {
+          font-size: 30px;
+        }
+        p {
+          font-size: $regular_size;
+        }
+        img {
+          margin-top: 30px;
+        }
+      }
+      //&_ahead
+      &_ahead {
+        h6 {
+          font-size: 30px;
+        }
+        p {
+          font-size: $regular_size;
+        }
+      }
+    }
+    //&_Tablet
+    @include tablet {
+      //&_interests
+      &_interests {
+        padding-bottom: 30px;
+        h6 {
+          font-size: 25px;
+        }
+      }
+      //&_ahead
+      &_ahead {
+        padding-top: 30px;
+        h6 {
+          font-size: 25px;
+        }
+      }
+    }
+    //&_Mobil
+    @include mobil {
+      //&_interests
+      &_interests {
+        h6 {
+          font-size: 20px;
+        }
+        p {
+          padding-top: 15px;
+          font-size: $small_size;
+          line-height: normal;
+        }
+      }
+      //&_ahead
+      &_ahead {
+        h6 {
+          font-size: 20px;
+        }
+        p {
+          padding-top: 15px;
+          font-size: $small_size;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+///// RESUME \\\\\
+
+//Resume_About#
+#resume_about {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0 0 60px 60px;
+  padding: 70px 0;
+
+  //resume_about
+  .resume_about {
+    max-width: 800px;
+    margin: 0 auto;
+    h6 {
+      color: $primary_color;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 110%;
+    }
+    p {
+      padding-top: 40px;
+      font-size: 20px;
+      font-weight: 500;
+      color: $primary_color;
+      line-height: 140%;
+    }
+    button {
+      margin-top: 40px;
+      border: 1px solid $four_color;
+      border-radius: 5px;
+      padding: 10px 20px;
+      background-color: transparent;
+      a {
+        color: $primary_color;
+        font-size: $regular_size;
+        font-weight: 500;
+      }
+    }
+
+    //Large
+    @include large {
+      h6 {
+        font-size: 50px;
+      }
+      p {
+        font-size: $xlarge_size;
+      }
+    }
+    //Notebook
+    @include notebook {
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      h6 {
+        font-size: 40px;
+      }
+      p {
+        padding-top: 30px;
+        font-size: $large_size;
+      }
+    }
+    //Tablet
+    @include tablet {
+      h6 {
+        font-size: 30px;
+      }
+      p {
+        padding-top: 30px;
+        font-size: $regular_size;
+      }
+    }
+    //X_Tablet
+    @include x_tablet {
+      h6 {
+        font-size: 25px;
+        line-height: normal;
+      }
+      p {
+        padding-top: 20px;
+      }
+    }
+    //Mobil
+    @include mobil {
+      h6 {
+        font-size: 20px;
+      }
+      p {
+        padding-top: 20px;
+        font-size: $small_size;
+        line-height: 18px;
+      }
+      button {
+        margin-top: 35px;
+        a {
+          font-size: $small_size;
+        }
+      }
+    }
+  }
+}
+
+//Resume_Skills#
+#resume_skills {
+  width: 100%;
+  background-color: $three_color;
+  padding: 100px 0;
+
+  //resume_skills
+  .resume_skills {
+    max-width: 800px;
+    margin: 0 auto;
+    //&_item
+    &_item {
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      h6 {
+        color: $seven_color;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 160%;
+      }
+      p {
+        padding-top: 20px;
+        font-size: $xlarge_size;
+        color: $eight_color;
+        font-weight: 400;
+        line-height: 160%;
+      }
+      ul {
+        padding-top: 20px;
+        padding-left: 40px;
+        li {
+          font-size: $xlarge_size;
+          color: $eight_color;
+          font-weight: 400;
+          line-height: 160%;
+          position: relative;
+          padding-bottom: 15px;
+          &:last-child {
+            padding-bottom: 0;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: -13px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $eight_color;
+          }
+        }
+      }
+    }
+
+    //Notebook
+    @include notebook {
+      max-width: 100%;
+      text-align: center;
+      //&_item
+      &_item {
+        h6 {
+          font-size: 28px;
+        }
+        p {
+          font-size: $large_size;
+          line-height: 145%;
+        }
+        ul {
+          padding-left: 0;
+          li {
+            font-size: $large_size;
+            line-height: 145%;
+          }
+        }
+      }
+    }
+    //Tablet
+    @include tablet {
+      //&_item
+      &_item {
+        h6 {
+          font-size: 22px;
+        }
+        p {
+          padding-top: 15px;
+          font-size: $regular_size;
+        }
+        ul {
+          li {
+            font-size: $regular_size;
+          }
+        }
+      }
+    }
+    //X_Tablet
+    @include x_tablet {
+      //&_item
+      &_item {
+        h6 {
+          font-size: $xlarge_size;
+        }
+
+        ul {
+          li {
+            &::before {
+              left: 0px;
+            }
+          }
+        }
+      }
+    }
+    //Mobil
+    @include mobil {
+      //&_item
+      &_item {
+        h6 {
+          font-size: $large_size;
+        }
+        p {
+          font-size: $small_size;
+          line-height: normal;
+        }
+        ul {
+          li {
+            font-size: $small_size;
+            line-height: normal;
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+///// PROJECTS-DETAİLS \\\\\
+
+//Projects_Details#
+#projects_details {
+  width: 100%;
+  padding: 100px 0;
+  background-color: $base_color;
+
+  //projects_details
+  .projects_details {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }

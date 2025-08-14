@@ -19,7 +19,7 @@ $small_size: 12px;
 //Media
 
 //X-Large
-@mixin x-large() {
+@mixin x_large() {
   @media only screen and (max-width: 1400px) {
     @content;
   }
@@ -43,7 +43,7 @@ $small_size: 12px;
   }
 }
 //X-Tablet
-@mixin x-tablet() {
+@mixin x_tablet() {
   @media only screen and (max-width: 575px) {
     @content;
   }
@@ -61,7 +61,7 @@ $small_size: 12px;
   }
 }
 //X-Small
-@mixin x-small() {
+@mixin x_small() {
   @media only screen and (max-width: 250px) {
     @content;
   }

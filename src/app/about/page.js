@@ -5,7 +5,6 @@ import İnfo from "@/templates/İnfo";
 function About() {
   return (
     <>
-      <div>About</div>
       <AboutWho />
       <AboutLooking />
       <İnfo />

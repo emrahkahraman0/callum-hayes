@@ -8,7 +8,7 @@ function ResumeSkills({ skills }) {
           <div className="resume_skills">
             {skills.map((skill) => (
               <div key={skill.id} className="resume_skills_item">
-                <h3>{skill.title}</h3>
+                <h6>{skill.title}</h6>
                 <p>{skill.description}</p>
                 <ul>
                   {skill.ul.map((item, index) => (

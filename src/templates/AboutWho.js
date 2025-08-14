@@ -6,7 +6,7 @@ function AboutWho() {
       <div id="about_who">
         <div className="container">
           <h6>Who I am beyond Design</h6>
-          <div className="about_who row row-cols-xl-2 row-cols-lg-2 row-cols-md-1 row-cols-sm-1">
+          <div className="about_who align_items row row-cols-xl-2 row-cols-lg-2 row-cols-md-1 row-cols-sm-1">
             <div className="about_who_image">
               <Image
                 className="img_fluid"

@@ -92,7 +92,7 @@ function Header() {
                 </Link>
               </li>
               <button>
-                <a href="#">Book a call</a>
+                <Link href="tel:+6494461709">Book a call</Link>
               </button>
             </ul>
             {/* header_menu */}
