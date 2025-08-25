@@ -1,1 +1,1 @@
-Projeye [Buradan](https://callum-hayes-agcs.vercel.app/) ulaşabilirsiniz :)
+Projeye [Buradan](https://callum-hayes.vercel.app/) ulaşabilirsiniz :)
